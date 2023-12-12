@@ -1,0 +1,117 @@
+@use "..//foundation/mixin" as m;
+
+.c-photocap{
+    margin: 0 20px;
+    @include m.mq(tab) {
+    margin: 0 60px;
+    }
+    @include m.mq(pc) {
+    margin: 0 100px;
+    }
+    &__top{
+        margin-bottom: 30px;
+        img{
+        width: 100%;
+        }
+        @include m.mq(tab) {
+            margin-bottom: 60px;
+        }
+        @include m.mq(pc) {
+            
+        
+        }
+    }
+    &__flex{
+        @include m.mq(tab) {
+            margin-bottom: 60px;
+        }
+        &--left{
+            display: flex;
+            margin-bottom: 30px;
+            @include m.mq(tab) {
+                margin-bottom: 117px;
+            }
+            @include m.mq(pc) {
+                margin-bottom: 60px;
+            
+            }
+            img{
+                width: 40%;
+                height: 89px;
+                object-fit: cover;
+                @include m.mq(tab) {
+                width: 50%;
+                height: 189px;
+
+                }
+                @include m.mq(pc) {
+                width: 50%;
+                height: 358px;
+                }
+                }
+                p{
+                line-height: 1.5;
+                }
+            
+        }
+        
+
+        &--right{
+            display: flex;
+            margin-bottom: 30px;
+            img{
+                width: 40%;
+                height: 89px;
+                object-fit: cover;
+                @include m.mq(tab) {
+                width: 50%;
+                height: 189px;
+
+                }
+                @include m.mq(pc) {
+                width: 50%;
+                height: 358px;
+                }
+                }
+        }
+        p{
+            line-height: 1.5;
+        }
+    }
+
+
+    &__center{
+        display: block;
+        margin-bottom: 30px;
+        img{
+            display: block;
+            width: 71%;
+            height: 358px;
+            margin: 0 auto;
+        }
+        @include m.mq(tab) {
+            margin-bottom: 240px;
+        }
+        @include m.mq(pc) {
+            margin-bottom: 60px;
+        
+        }
+        
+    }
+    &__all{
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        img{
+            width: 100%;
+        }
+        @include m.mq(tab) {
+            grid-template-columns: repeat(2,minmax(70px,1fr));
+            }
+            @include m.mq(pc) {
+                grid-template-columns: repeat(3,minmax(170px,1fr));
+            }
+
+    }
+}

@@ -1,0 +1,206 @@
+@use "..//foundation/mixin" as m;
+.p-brunch{
+    // margin: 20px;
+    margin: 1.25rem;
+    @include m.mq(tab) {
+    display: flex;
+    // margin: 40px;
+    margin: 2.5rem;
+    }
+    @include m.mq(pc) {
+        display: flex;
+        // margin: 120px 119px 130px 112px ;
+        margin: 7.5rem ;
+    }
+}
+
+.out{
+    background-image: url(/img/take-out.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    @include m.mq(tab) {
+
+        min-height: auto;
+        margin-right: 2.25rem;
+        }
+    @include m.mq(pc) {
+        margin-right: 5rem;
+        // min-height: auto;
+    }
+
+    h2{
+        font-size: clamp(2.563rem, 1.971rem + 2.52vw, 5rem);
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        color: #EAEAEA ;
+        @include m.mq(tab) {
+        position: absolute;
+        top: 14px;
+        left: 11px;
+    }
+        @include m.mq(pc) {
+        position: absolute;
+        top: 24px;
+        left: 11px;
+        }
+    }
+
+    span{
+        display: inline-block;
+        position: absolute;
+        top: 80px;
+        left: 15px;
+        width: 33px;
+        height: 4px;
+        background-color: #FFFFFF;
+        @include m.mq(tab) {
+            top: 91px;
+            left: 15px;
+            width: 35px;
+            height: 4px;
+            }
+        @include m.mq(pc) {
+            top: 161px;
+            left: 18.5px;
+            width: 63px;
+            height: 4px;
+        }
+    }
+    dl{
+        display: inline-block;
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        margin: 16px;
+        color: #3C2A10;
+        @include m.mq(tab) {
+            // padding-bottom: 10px;
+            }
+        @include m.mq(pc) {
+            margin: 20px 20px 20px 12px;
+            
+        }
+    }
+    .out-box{
+        margin-top: 400px;
+        @include m.mq(tab) {
+        margin-top: auto 0;
+        }
+        @include m.mq(pc) {
+        margin-top: 700px;
+        }
+    }
+
+    dt{
+        font-size: clamp(1.375rem, 1.345rem + 0.13vw, 1.5rem);
+        font-weight: bold;
+        padding: 16px 16px 8px;
+        @include m.mq(tab) {
+            padding: 16px;
+        }
+        @include m.mq(pc) {
+            padding: 14px 20px 18px;
+        }
+    }
+    dd{
+        padding: 0 16px 16px;
+        @include m.mq(tab) {
+
+        }
+        @include m.mq(pc) {
+            padding: 0 20px 14px;
+        }
+    }
+}
+
+.in{
+    background-image: url(/img/eat-in.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    h2{
+        font-size: clamp(2.563rem, 1.971rem + 2.52vw, 5rem);
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        color: #EAEAEA ;
+        @include m.mq(tab) {
+        position: absolute;
+        top: 14px;
+        left: 11px;
+    }
+        @include m.mq(pc) {
+        position: absolute;
+        top: 24px;
+        left: 11px;
+        }
+    }
+
+    span{
+        display: inline-block;
+        position: absolute;
+        top: 80px;
+        left: 15px;
+        width: 33px;
+        height: 4px;
+        background-color: #FFFFFF;
+        @include m.mq(tab) {
+            top: 91px;
+            left: 15px;
+            width: 35px;
+            height: 4px;
+            }
+        @include m.mq(pc) {
+            top: 161px;
+            left: 18.5px;
+            width: 63px;
+            height: 4px;
+        }
+    }
+    dl{
+        display: inline-block;
+        background-color: #FFFFFF;
+        opacity: 0.8;
+        margin: 16px;
+        color: #3C2A10;
+        @include m.mq(tab) {
+            // padding-bottom: 10px;
+            }
+        @include m.mq(pc) {
+            margin: 20px 20px 20px 12px;
+            
+        }
+    }
+    .out-box{
+        margin-top: 400px;
+        @include m.mq(tab) {
+        margin-top: auto 0;
+        }
+        @include m.mq(pc) {
+        margin-top: 700px;
+        }
+    }
+
+    dt{
+        font-size: clamp(1.375rem, 1.345rem + 0.13vw, 1.5rem);
+        font-weight: bold;
+        padding: 16px 16px 8px;
+        @include m.mq(tab) {
+            padding: 16px;
+        }
+        @include m.mq(pc) {
+            padding: 14px 20px 18px;
+        }
+    }
+    dd{
+        padding: 0 16px 16px;
+        @include m.mq(tab) {
+
+        }
+        @include m.mq(pc) {
+            padding: 0 20px 14px;
+        }
+    }
+}

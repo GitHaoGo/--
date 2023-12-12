@@ -1,0 +1,28 @@
+@use "..//foundation/mixin" as m;
+.l-footer{
+    width: 100%;
+    height: 150px;
+    background: url(/img/footer.png);
+    color: #FFFFFF;
+    
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    li{
+        margin-top: 41px;
+        font-size: clamp(1.125rem, 1.095rem + 0.13vw, 1.25rem);
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    p{
+        margin: 30px;
+        text-align: center; 
+        font-size: 0.875rem; 
+    }
+}
+

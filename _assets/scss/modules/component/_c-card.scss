@@ -1,0 +1,104 @@
+@use "..//foundation/mixin" as m;
+.c-cardwrap{
+    margin: 0 19px;
+    @include m.mq(tab) {
+    margin: 0px 43px;
+    margin: 0 2.688rem;
+    }
+    @include m.mq(pc) {
+        margin: 0 100px;
+        margin: 0 6.25rem;
+    
+    }
+    
+}
+.c-card{
+    width: 100%;
+    margin-bottom: 20.5px;
+    background-color: #3C2A10;
+    height: auto;
+    @include m.mq(tab) {
+        display: flex;
+        }
+        @include m.mq(pc) {
+            display: flex;
+            margin-bottom: 30px;
+        }
+    img{
+        width: 100%;
+        object-fit: cover;
+        @include m.mq(tab) {
+            width: 50%;
+            height: 50%;
+            }
+            @include m.mq(pc) {
+            
+            }
+    }
+    figcaption{
+        color: #FFFFFF;
+        @include m.mq(tab) {
+            width: 50%;
+        }
+        @include m.mq(pc) {
+        } 
+        h2{
+            font-size: clamp(1.25rem, 1.007rem + 1.04vw, 2.25rem);
+            margin: 32px 17px 0;
+            @include m.mq(tab) {
+                margin: 51px 34px 0;
+
+            }
+            @include m.mq(pc) {
+                margin: 56px 63px 0;
+                margin: 2.91vw 3.2vw 0;
+            }
+        }
+        h3{
+            font-size: clamp(1rem, 0.879rem + 0.52vw, 1.5rem);
+            margin: 21px 17px 0;
+            // margin: 1.063rem 1.313rem 0;
+            @include m.mq(tab) {
+            margin: 21px 34px 0;
+            }
+            @include m.mq(pc) {
+            margin: 44px 63px 0;
+            // margin: 2.75rem 3.938rem 0;
+            }
+        }
+        p{
+            margin: 7px 16px 40px;
+            line-height: 1.5;
+            @include m.mq(tab) {
+            margin: 7px 36px 45px;
+            }
+            @include m.mq(pc) {
+            margin: 13px 63px 60px;
+            }
+        }
+        button{
+            display: block;
+            width: 160px;
+            height: 42px;
+            border-radius: 50px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            font-weight: bold;
+            @include m.mq(tab) {
+                // width: 163px;
+                width: 50%;
+                height: 42px;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+            @include m.mq(pc) {
+                // width: 292px;
+                width: 50%;
+                height: 79px;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+}

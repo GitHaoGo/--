@@ -1,0 +1,95 @@
+@use "..//foundation/mixin" as m;
+
+  .pagination__item{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid;
+    // min-width: 1em;
+    @include m.mq(tab) {
+    }
+    @include m.mq(pc) {
+    
+    }
+  
+  }
+  .pagination__btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    @include m.mq(tab) {
+    }
+    @include m.mq(pc) {
+
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 64px auto;
+    a{
+      text-decoration: none;
+      color: #000;
+    }
+    &__list {
+      display: none;
+    }
+    &__item {
+      &--current {
+        background: #3C2A10;
+        @extend .pagination__item;
+        a{
+          color: #fff;
+        }
+      }
+    }
+    &__pos {
+      display: none;
+      @extend .pagination__btn;
+    }
+    &__btn {
+      &--prev {
+        @extend .pagination__btn;
+      }
+      &--next {
+        display: block;
+        @extend .pagination__btn;
+      }
+      &--first {
+        display: block;
+        @extend .pagination__btn;
+      }
+      &--last {
+        display: block;
+        @extend .pagination__btn;
+      }
+    }
+    @include m.mq(tab) {
+      &__list {
+        display: flex;
+      }
+      &__pos {
+        display: block;
+      }
+      &__btn {
+        &--prev {
+          display: none;
+        }
+        &--next {
+          display: none;
+        }
+      }
+    }
+    @include m.mq(pc) {
+      &__btn {
+        &--first {
+          display: block;
+        }
+        &--last {
+          display: none;
+        }
+      }
+    }
+  }
