@@ -1,17 +1,16 @@
 @use "..//foundation/mixin" as m;
 .p-brunch{
-    // margin: 20px;
     margin: 1.25rem;
     @include m.mq(tab) {
     display: flex;
-    // margin: 40px;
-    margin: 2.5rem;
+    // margin: 2.5rem;
+    margin: calc(40/16)*1vw;
+    
     }
     @include m.mq(pc) {
         display: flex;
-        // margin: 120px 119px 130px 112px ;
-        margin: 7.5rem ;
-        margin: calc(16/120)*1rem;
+        // margin: 3.25rem ;
+        margin: calc(60/16)*1vw;
     }
 }
 
@@ -20,51 +19,52 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    margin-bottom: 1.25rem;
     @include m.mq(tab) {
-
-        min-height: auto;
         margin-right: 2.25rem;
+        margin-right: calc(40/16)*1vw;;
+        margin-bottom: 0;
         }
     @include m.mq(pc) {
         margin-right: 5rem;
-        // min-height: auto;
+        margin-right: calc(40/16)*1vw;
+        margin-bottom: 0;
     }
 
     h2{
         font-size: clamp(2.563rem, 1.971rem + 2.52vw, 5rem);
         position: absolute;
-        top: 13px;
-        left: 15px;
+        top: 0.8125rem;
+        left: 0.9375rem;
         color: #EAEAEA ;
         @include m.mq(tab) {
         position: absolute;
-        top: 14px;
-        left: 11px;
+        top: 0.875rem;
+        left: 0.6875rem;
     }
         @include m.mq(pc) {
         position: absolute;
-        top: 24px;
-        left: 11px;
+        top: 1.5rem;
         }
     }
 
     span{
         display: inline-block;
         position: absolute;
-        top: 80px;
-        left: 15px;
+        top: calc(80/16)*1rem;
+        left: calc(15/16)*1vw;
         width: 33px;
         height: 4px;
         background-color: #FFFFFF;
         @include m.mq(tab) {
-            top: 91px;
-            left: 15px;
+            top: calc(91/16)*1rem;
+            left: calc(15/16)*1rem;
             width: 35px;
             height: 4px;
             }
         @include m.mq(pc) {
-            top: 161px;
-            left: 18.5px;
+            top: calc(161/16)*1rem;
+            left: calc(18.5/16)*1rem;
             width: 63px;
             height: 4px;
         }
@@ -73,44 +73,56 @@
         display: inline-block;
         background-color: #FFFFFF;
         opacity: 0.8;
-        margin: 16px;
         color: #3C2A10;
+    }
+    #top{
+        margin: 1rem 1rem 0;
+        @include m.mq(tab) {
+
+            }
+        @include m.mq(pc) {
+            margin: 1.25rem 1.25rem 0;
+        }
+    }
+    #btm{
+        margin: 1rem;
         @include m.mq(tab) {
             // padding-bottom: 10px;
             }
         @include m.mq(pc) {
-            margin: 20px 20px 20px 12px;
-            
+            margin: 1.25rem;
         }
     }
+
+
     .out-box{
-        margin-top: 400px;
+        padding-top: calc(298/16)*1rem;
         @include m.mq(tab) {
-        margin-top: auto 0;
+        margin-top: calc(371/16)*1rem;
         }
         @include m.mq(pc) {
-        margin-top: 700px;
+        margin-top: calc(600/16)*1rem;
         }
     }
 
     dt{
         font-size: clamp(1.375rem, 1.345rem + 0.13vw, 1.5rem);
         font-weight: bold;
-        padding: 16px 16px 8px;
+        padding: 1rem 1rem  0.5rem;
         @include m.mq(tab) {
-            padding: 16px;
+            padding: 1rem;
         }
         @include m.mq(pc) {
-            padding: 14px 20px 18px;
+            padding: 0.875rem 1.25rem 1.125rem;
         }
     }
     dd{
-        padding: 0 16px 16px;
+        padding: 0 1rem 1rem;
         @include m.mq(tab) {
 
         }
         @include m.mq(pc) {
-            padding: 0 20px 14px;
+            padding: 0 1.25rem 0.875rem;
         }
     }
 }
@@ -120,42 +132,40 @@
     background-size: cover;
     background-position: center;
     position: relative;
-
     h2{
         font-size: clamp(2.563rem, 1.971rem + 2.52vw, 5rem);
         position: absolute;
-        top: 13px;
-        left: 15px;
+        top: 0.8125rem;
+        left: 0.9375rem;
         color: #EAEAEA ;
         @include m.mq(tab) {
         position: absolute;
-        top: 14px;
-        left: 11px;
+        top: 0.875rem;
+        left: 0.6875rem;
     }
         @include m.mq(pc) {
         position: absolute;
-        top: 24px;
-        left: 11px;
+        top: 1.5rem;
         }
     }
 
     span{
         display: inline-block;
         position: absolute;
-        top: 80px;
-        left: 15px;
+        top: calc(80/16)*1rem;
+        left: calc(15/16)*1vw;
         width: 33px;
         height: 4px;
         background-color: #FFFFFF;
         @include m.mq(tab) {
-            top: 91px;
-            left: 15px;
+            top: calc(91/16)*1rem;
+            left: calc(15/16)*1rem;
             width: 35px;
             height: 4px;
             }
         @include m.mq(pc) {
-            top: 161px;
-            left: 18.5px;
+            top: calc(161/16)*1rem;
+            left: calc(18.5/16)*1rem;
             width: 63px;
             height: 4px;
         }
@@ -164,44 +174,56 @@
         display: inline-block;
         background-color: #FFFFFF;
         opacity: 0.8;
-        margin: 16px;
         color: #3C2A10;
+    }
+    #top{
+        margin: 1rem 1rem 0;
+        @include m.mq(tab) {
+
+            }
+        @include m.mq(pc) {
+            margin: 1.25rem 1.25rem 0;
+        }
+    }
+    #btm{
+        margin: 1rem;
         @include m.mq(tab) {
             // padding-bottom: 10px;
             }
         @include m.mq(pc) {
-            margin: 20px 20px 20px 12px;
-            
+            margin: 1.25rem;
         }
     }
+
+
     .out-box{
-        margin-top: 400px;
+        padding-top: calc(298/16)*1rem;
         @include m.mq(tab) {
-        margin-top: auto 0;
+        margin-top: calc(371/16)*1rem;
         }
         @include m.mq(pc) {
-        margin-top: 700px;
+        margin-top: calc(600/16)*1rem;
         }
     }
 
     dt{
         font-size: clamp(1.375rem, 1.345rem + 0.13vw, 1.5rem);
         font-weight: bold;
-        padding: 16px 16px 8px;
+        padding: 1rem 1rem  0.5rem;
         @include m.mq(tab) {
-            padding: 16px;
+            padding: 1rem;
         }
         @include m.mq(pc) {
-            padding: 14px 20px 18px;
+            padding: 0.875rem 1.25rem 1.125rem;
         }
     }
     dd{
-        padding: 0 16px 16px;
+        padding: 0 1rem 1rem;
         @include m.mq(tab) {
 
         }
         @include m.mq(pc) {
-            padding: 0 20px 14px;
+            padding: 0 1.25rem 0.875rem;
         }
     }
 }

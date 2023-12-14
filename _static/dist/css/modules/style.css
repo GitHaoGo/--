@@ -33,7 +33,6 @@
 .l-main {
   display: flex;
   width: 100%;
-  height: 100%;
 }
 .l-main__left {
   width: 100%;
@@ -50,7 +49,6 @@
 }
 .l-main__right {
   width: 0;
-  height: auto;
 }
 @media screen and (min-width: 428px) {
   .l-main__right {
@@ -82,7 +80,7 @@
   display: block;
   color: #707070;
   font-family: "Roboto", sans-serif;
-  margin-left: 40px;
+  margin-left: 2.5vw;
   display: none;
 }
 @media screen and (min-width: 428px) {
@@ -94,7 +92,7 @@
   .l-sidebar h2 {
     display: block;
     font-size: 2.125rem;
-    padding-top: 84px;
+    padding-top: 5.25rem;
   }
 }
 .l-sidebar a {
@@ -182,16 +180,19 @@
 .c-gl .c-menu {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 40px;
+  margin-top: 3.75rem;
+  margin-left: 2.5vw;
+  margin-bottom: 3.75vw;
   list-style: none;
 }
 .c-gl .c-sub {
   font-size: 1.25rem;
-  margin-left: 66px;
+  margin-left: 4.125vw;
+  margin-right: 4.125vw;
   list-style: none;
 }
 .c-gl .c-sub li {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .c-header {
@@ -222,12 +223,15 @@
 .c-header form {
   display: block;
   margin: 0 0 0 auto;
+  position: relative;
 }
 .c-header .search {
   width: 57.5vw;
   height: 46px;
   border: 1px solid #707070;
   border-radius: 10px;
+  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
 }
 @media screen and (min-width: 428px) {
   .c-header .search {
@@ -237,6 +241,25 @@
 @media screen and (min-width: 835px) {
   .c-header .search {
     width: 25vw;
+  }
+}
+.c-header .search + i {
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  transform: translateY(-50%);
+  content: "";
+  color: #707070;
+  opacity: 0.7;
+}
+@media screen and (min-width: 428px) {
+  .c-header .search + i {
+    left: 20%;
+  }
+}
+@media screen and (min-width: 835px) {
+  .c-header .search + i {
+    left: 0.5rem;
   }
 }
 .c-header .search-btn {
@@ -341,19 +364,21 @@
 }
 
 .c-card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin-bottom: 20.5px;
-  background-color: #3C2A10;
-  height: auto;
 }
 @media screen and (min-width: 428px) {
   .c-card {
     display: flex;
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 835px) {
   .c-card {
     display: flex;
+    flex-direction: row;
     margin-bottom: 30px;
   }
 }
@@ -364,11 +389,11 @@
 @media screen and (min-width: 428px) {
   .c-card img {
     width: 50%;
-    height: 50%;
   }
 }
 .c-card figcaption {
   color: #FFFFFF;
+  background-color: #3C2A10;
 }
 @media screen and (min-width: 428px) {
   .c-card figcaption {
@@ -382,6 +407,8 @@
 @media screen and (min-width: 428px) {
   .c-card figcaption h2 {
     margin: 51px 34px 0;
+    margin-top: 3.1875rem;
+    margin-left: 2.125vw;
   }
 }
 @media screen and (min-width: 835px) {
@@ -393,29 +420,39 @@
 .c-card figcaption h3 {
   font-size: clamp(1rem, 0.879rem + 0.52vw, 1.5rem);
   margin: 21px 17px 0;
+  margin: 1.063rem 1.313rem 0;
 }
 @media screen and (min-width: 428px) {
   .c-card figcaption h3 {
     margin: 21px 34px 0;
+    margin-top: 1.3125rem;
+    margin-left: 2.125vw;
   }
 }
 @media screen and (min-width: 835px) {
   .c-card figcaption h3 {
     margin: 44px 63px 0;
+    margin-top: 2.75vw;
+    margin-left: 3.9375vw;
   }
 }
 .c-card figcaption p {
   margin: 7px 16px 40px;
   line-height: 1.5;
+  overflow: hidden;
 }
 @media screen and (min-width: 428px) {
   .c-card figcaption p {
     margin: 7px 36px 45px;
+    margin-top: 0.4375rem;
+    margin-left: 2.25vw;
   }
 }
 @media screen and (min-width: 835px) {
   .c-card figcaption p {
     margin: 13px 63px 60px;
+    margin-top: 0.8125rem;
+    margin-left: 3.9375vw;
   }
 }
 .c-card figcaption button {
@@ -444,41 +481,33 @@
   }
 }
 
-.c-hero {
+.c-mv {
   position: relative;
 }
-.c-hero img {
-  object-fit: cover;
+.c-mv img {
   width: 100%;
-  height: 285px;
+  height: 206px;
+  object-fit: cover;
 }
-.c-hero h1 {
-  display: block;
+@media screen and (min-width: 428px) {
+  .c-mv img {
+    height: 460px;
+  }
+}
+.c-mv h1 {
   position: absolute;
   top: 50%;
-  left: 37px;
+  left: 26px;
   color: #FFFFFF;
   font-weight: bold;
   font-size: clamp(2.25rem, 1.886rem + 1.55vw, 3.75rem);
 }
 @media screen and (min-width: 428px) {
-  .c-hero h1 {
-    display: flex;
-    align-items: center;
+  .c-mv h1 {
     left: 86px;
   }
 }
-.c-hero h1::after {
-  content: "チーズバーガー";
-  font-size: 16px;
-  display: block;
-  padding-top: 10px;
-}
-@media screen and (min-width: 428px) {
-  .c-hero h1::after {
-    padding-left: 19px;
-  }
-}
+
 .c-caption2 {
   margin: 0 20px;
 }
@@ -533,22 +562,22 @@
   }
 }
 
-.code {
+.c-code {
   background-color: #F5F5F5;
   padding: 50px;
   margin: 0 20px 30px;
 }
 @media screen and (min-width: 428px) {
-  .code {
-    margin: 0 61px 60px;
+  .c-code {
+    margin: 0 60px 60px;
   }
 }
 @media screen and (min-width: 835px) {
-  .code {
+  .c-code {
     margin: 0 100px 50px;
   }
 }
-.code p {
+.c-code p {
   line-height: 1.5;
 }
 
@@ -840,33 +869,6 @@
   }
 }
 
-.c-mv {
-  position: relative;
-}
-.c-mv img {
-  width: 100%;
-  height: 206px;
-  object-fit: cover;
-}
-@media screen and (min-width: 428px) {
-  .c-mv img {
-    height: 460px;
-  }
-}
-.c-mv h1 {
-  position: absolute;
-  top: 50%;
-  left: 26px;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: clamp(2.25rem, 1.886rem + 1.55vw, 3.75rem);
-}
-@media screen and (min-width: 428px) {
-  .c-mv h1 {
-    left: 86px;
-  }
-}
-
 body {
   box-sizing: border-box;
   margin: 0;
@@ -984,13 +986,13 @@ input, select {
 @media screen and (min-width: 428px) {
   .p-brunch {
     display: flex;
-    margin: 2.5rem;
+    margin: 2.5vw;
   }
 }
 @media screen and (min-width: 835px) {
   .p-brunch {
     display: flex;
-    margin: 7.5rem;
+    margin: 3.75vw;
   }
 }
 
@@ -999,60 +1001,63 @@ input, select {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  margin-bottom: 1.25rem;
 }
 @media screen and (min-width: 428px) {
   .out {
-    min-height: auto;
     margin-right: 2.25rem;
+    margin-right: 2.5vw;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 835px) {
   .out {
     margin-right: 5rem;
+    margin-right: 2.5vw;
+    margin-bottom: 0;
   }
 }
 .out h2 {
   font-size: clamp(2.563rem, 1.971rem + 2.52vw, 5rem);
   position: absolute;
-  top: 13px;
-  left: 15px;
+  top: 0.8125rem;
+  left: 0.9375rem;
   color: #EAEAEA;
 }
 @media screen and (min-width: 428px) {
   .out h2 {
     position: absolute;
-    top: 14px;
-    left: 11px;
+    top: 0.875rem;
+    left: 0.6875rem;
   }
 }
 @media screen and (min-width: 835px) {
   .out h2 {
     position: absolute;
-    top: 24px;
-    left: 11px;
+    top: 1.5rem;
   }
 }
 .out span {
   display: inline-block;
   position: absolute;
-  top: 80px;
-  left: 15px;
+  top: 5rem;
+  left: 0.9375vw;
   width: 33px;
   height: 4px;
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 428px) {
   .out span {
-    top: 91px;
-    left: 15px;
+    top: 5.6875rem;
+    left: 0.9375rem;
     width: 35px;
     height: 4px;
   }
 }
 @media screen and (min-width: 835px) {
   .out span {
-    top: 161px;
-    left: 18.5px;
+    top: 10.0625rem;
+    left: 1.15625rem;
     width: 63px;
     height: 4px;
   }
@@ -1061,48 +1066,58 @@ input, select {
   display: inline-block;
   background-color: #FFFFFF;
   opacity: 0.8;
-  margin: 16px;
   color: #3C2A10;
 }
+.out #top {
+  margin: 1rem 1rem 0;
+}
 @media screen and (min-width: 835px) {
-  .out dl {
-    margin: 20px 20px 20px 12px;
+  .out #top {
+    margin: 1.25rem 1.25rem 0;
+  }
+}
+.out #btm {
+  margin: 1rem;
+}
+@media screen and (min-width: 835px) {
+  .out #btm {
+    margin: 1.25rem;
   }
 }
 .out .out-box {
-  margin-top: 400px;
+  padding-top: 18.625rem;
 }
 @media screen and (min-width: 428px) {
   .out .out-box {
-    margin-top: auto 0;
+    margin-top: 23.1875rem;
   }
 }
 @media screen and (min-width: 835px) {
   .out .out-box {
-    margin-top: 700px;
+    margin-top: 37.5rem;
   }
 }
 .out dt {
   font-size: clamp(1.375rem, 1.345rem + 0.13vw, 1.5rem);
   font-weight: bold;
-  padding: 16px 16px 8px;
+  padding: 1rem 1rem 0.5rem;
 }
 @media screen and (min-width: 428px) {
   .out dt {
-    padding: 16px;
+    padding: 1rem;
   }
 }
 @media screen and (min-width: 835px) {
   .out dt {
-    padding: 14px 20px 18px;
+    padding: 0.875rem 1.25rem 1.125rem;
   }
 }
 .out dd {
-  padding: 0 16px 16px;
+  padding: 0 1rem 1rem;
 }
 @media screen and (min-width: 835px) {
   .out dd {
-    padding: 0 20px 14px;
+    padding: 0 1.25rem 0.875rem;
   }
 }
 
@@ -1115,45 +1130,44 @@ input, select {
 .in h2 {
   font-size: clamp(2.563rem, 1.971rem + 2.52vw, 5rem);
   position: absolute;
-  top: 13px;
-  left: 15px;
+  top: 0.8125rem;
+  left: 0.9375rem;
   color: #EAEAEA;
 }
 @media screen and (min-width: 428px) {
   .in h2 {
     position: absolute;
-    top: 14px;
-    left: 11px;
+    top: 0.875rem;
+    left: 0.6875rem;
   }
 }
 @media screen and (min-width: 835px) {
   .in h2 {
     position: absolute;
-    top: 24px;
-    left: 11px;
+    top: 1.5rem;
   }
 }
 .in span {
   display: inline-block;
   position: absolute;
-  top: 80px;
-  left: 15px;
+  top: 5rem;
+  left: 0.9375vw;
   width: 33px;
   height: 4px;
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 428px) {
   .in span {
-    top: 91px;
-    left: 15px;
+    top: 5.6875rem;
+    left: 0.9375rem;
     width: 35px;
     height: 4px;
   }
 }
 @media screen and (min-width: 835px) {
   .in span {
-    top: 161px;
-    left: 18.5px;
+    top: 10.0625rem;
+    left: 1.15625rem;
     width: 63px;
     height: 4px;
   }
@@ -1162,48 +1176,58 @@ input, select {
   display: inline-block;
   background-color: #FFFFFF;
   opacity: 0.8;
-  margin: 16px;
   color: #3C2A10;
 }
+.in #top {
+  margin: 1rem 1rem 0;
+}
 @media screen and (min-width: 835px) {
-  .in dl {
-    margin: 20px 20px 20px 12px;
+  .in #top {
+    margin: 1.25rem 1.25rem 0;
+  }
+}
+.in #btm {
+  margin: 1rem;
+}
+@media screen and (min-width: 835px) {
+  .in #btm {
+    margin: 1.25rem;
   }
 }
 .in .out-box {
-  margin-top: 400px;
+  padding-top: 18.625rem;
 }
 @media screen and (min-width: 428px) {
   .in .out-box {
-    margin-top: auto 0;
+    margin-top: 23.1875rem;
   }
 }
 @media screen and (min-width: 835px) {
   .in .out-box {
-    margin-top: 700px;
+    margin-top: 37.5rem;
   }
 }
 .in dt {
   font-size: clamp(1.375rem, 1.345rem + 0.13vw, 1.5rem);
   font-weight: bold;
-  padding: 16px 16px 8px;
+  padding: 1rem 1rem 0.5rem;
 }
 @media screen and (min-width: 428px) {
   .in dt {
-    padding: 16px;
+    padding: 1rem;
   }
 }
 @media screen and (min-width: 835px) {
   .in dt {
-    padding: 14px 20px 18px;
+    padding: 0.875rem 1.25rem 1.125rem;
   }
 }
 .in dd {
-  padding: 0 16px 16px;
+  padding: 0 1rem 1rem;
 }
 @media screen and (min-width: 835px) {
   .in dd {
-    padding: 0 20px 14px;
+    padding: 0 1.25rem 0.875rem;
   }
 }
 
@@ -1222,7 +1246,7 @@ input, select {
 }
 @media screen and (min-width: 835px) {
   .p-front-mv img {
-    height: 530px;
+    height: 33.125vw;
   }
 }
 .p-front-mv p {
@@ -1232,47 +1256,45 @@ input, select {
   font-weight: bold;
   position: absolute;
   top: 50%;
-  left: 25px;
+  left: 1.5625vw;
+  transform: translateY(-50%);
 }
 @media screen and (min-width: 428px) {
   .p-front-mv p {
-    left: 86px;
-  }
-}
-@media screen and (min-width: 835px) {
-  .p-front-mv p {
-    left: 86px;
+    left: 5.375vw;
   }
 }
 
 .p-access {
+  margin-top: 3.125rem;
   width: 100%;
-  height: auto;
+  min-height: 700px;
   position: relative;
   color: #ffffff;
 }
-.p-access iframe {
-  width: 100%;
-}
-.p-access__mask {
+.p-access::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   background-color: #707070;
   opacity: 0.59;
   width: 100%;
-  height: 401px;
+  height: 70%;
 }
 @media screen and (min-width: 428px) {
-  .p-access__mask {
-    display: none;
+  .p-access::before {
+    height: 100%;
   }
 }
 @media screen and (min-width: 835px) {
-  .p-access__mask {
-    display: block;
-    min-height: 100%;
+  .p-access::before {
+    height: 100%;
   }
+}
+.p-access iframe {
+  width: 100%;
+  min-height: 700px;
 }
 .p-access__overlay {
   position: absolute;
@@ -1293,56 +1315,90 @@ input, select {
 }
 .p-access__overlay h2 {
   font-size: clamp(1.875rem, 1.784rem + 0.39vw, 2.25rem);
-  margin: 42px;
+  margin: 2.625rem;
   color: #ffffff;
-}
-@media screen and (min-width: 428px) {
-  .p-access__overlay h2 {
-    margin: 42px;
-  }
 }
 @media screen and (min-width: 835px) {
   .p-access__overlay h2 {
-    margin: 86px 119px;
+    margin-top: 5.3125vw;
+    margin-left: 7.4375vw;
   }
 }
 .p-access__overlay span {
   position: absolute;
-  top: 102px;
-  left: 42px;
+  top: 6.375rem;
+  left: 2.625rem;
   width: 50px;
   height: 5px;
   background-color: #ffffff;
 }
 @media screen and (min-width: 428px) {
   .p-access__overlay span {
-    top: 102px;
-    left: 42px;
     width: 75px;
     height: 2px;
   }
 }
 @media screen and (min-width: 835px) {
   .p-access__overlay span {
-    top: 189px;
-    left: 119px;
+    top: 11.8125vw;
+    left: 7.4375vw;
     width: 75px;
     height: 2px;
   }
 }
 .p-access__overlay p {
   margin: 40px;
+  margin: 2.5rem;
   font-size: clamp(0.875rem, 0.845rem + 0.13vw, 1rem);
   line-height: 2;
 }
 @media screen and (min-width: 428px) {
   .p-access__overlay p {
     margin: 42px;
+    margin-top: 2.625rem;
+    margin-left: 2.625rem;
   }
 }
 @media screen and (min-width: 835px) {
   .p-access__overlay p {
-    margin: 119px;
+    margin: 7.4375vw;
+  }
+}
+
+.p-archive-mv {
+  position: relative;
+}
+.p-archive-mv img {
+  object-fit: cover;
+  width: 100%;
+  height: 285px;
+}
+.p-archive-mv h1 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 37px;
+  transform: translateY(-50%);
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: clamp(2.25rem, 1.886rem + 1.55vw, 3.75rem);
+}
+@media screen and (min-width: 428px) {
+  .p-archive-mv h1 {
+    display: flex;
+    align-items: center;
+    left: 86px;
+  }
+}
+.p-archive-mv h1::after {
+  content: "チーズバーガー";
+  font-size: 16px;
+  display: block;
+  padding-top: 10px;
+}
+@media screen and (min-width: 428px) {
+  .p-archive-mv h1::after {
+    padding-left: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */

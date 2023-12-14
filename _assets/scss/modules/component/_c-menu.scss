@@ -12,15 +12,19 @@
     .c-menu{
         font-size: 1.5rem;
         font-weight: bold;
-        margin: 40px;
+        margin-top: calc(60/16)*1rem;
+        margin-left: calc(40/16)*1vw;
+        margin-bottom: calc(60/16)*1vw;
         list-style: none;
     }
     .c-sub{
         font-size: 1.25rem;
-        margin-left: 66px;
+        // font-size: calc(20/1920)*100vw;
+        margin-left:calc(66/16)*1vw;
+        margin-right: calc(66/16)*1vw;
         list-style: none;
         li{
-        padding-bottom: 20px;
+        padding-bottom: calc(20/16)*1rem;
         }
         
     }

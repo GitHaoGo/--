@@ -21,6 +21,7 @@
         position: absolute;
         top: 50%;
         left: 37px;
+        transform: translateY(-50%);
         color: #FFFFFF;
         font-weight: bold;
         font-size: clamp(2.25rem, 1.886rem + 1.55vw, 3.75rem);

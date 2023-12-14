@@ -13,15 +13,18 @@
     
 }
 .c-card{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 20.5px;
-    background-color: #3C2A10;
-    height: auto;
+    // background-color: #3C2A10;
     @include m.mq(tab) {
         display: flex;
+        flex-direction: row;
         }
         @include m.mq(pc) {
             display: flex;
+            flex-direction: row;
             margin-bottom: 30px;
         }
     img{
@@ -29,25 +32,21 @@
         object-fit: cover;
         @include m.mq(tab) {
             width: 50%;
-            height: 50%;
-            }
-            @include m.mq(pc) {
-            
             }
     }
     figcaption{
         color: #FFFFFF;
+        background-color: #3C2A10;
         @include m.mq(tab) {
             width: 50%;
         }
-        @include m.mq(pc) {
-        } 
         h2{
             font-size: clamp(1.25rem, 1.007rem + 1.04vw, 2.25rem);
             margin: 32px 17px 0;
             @include m.mq(tab) {
                 margin: 51px 34px 0;
-
+                margin-top: calc(51/16)*1rem;
+                margin-left: calc(34/16)*1vw;
             }
             @include m.mq(pc) {
                 margin: 56px 63px 0;
@@ -57,23 +56,32 @@
         h3{
             font-size: clamp(1rem, 0.879rem + 0.52vw, 1.5rem);
             margin: 21px 17px 0;
-            // margin: 1.063rem 1.313rem 0;
+            margin: 1.063rem 1.313rem 0;
             @include m.mq(tab) {
             margin: 21px 34px 0;
+            margin-top: calc(21/16)*1rem;
+            margin-left: calc(34/16)*1vw;
             }
             @include m.mq(pc) {
             margin: 44px 63px 0;
-            // margin: 2.75rem 3.938rem 0;
+            margin-top: calc(44/16)*1vw;
+            margin-left: calc(63/16)*1vw;
             }
         }
         p{
             margin: 7px 16px 40px;
             line-height: 1.5;
+            overflow: hidden;
             @include m.mq(tab) {
             margin: 7px 36px 45px;
+            margin-top: calc(7/16)*1rem;
+            margin-left: calc(36/16)*1vw;
             }
             @include m.mq(pc) {
             margin: 13px 63px 60px;
+            margin-top: calc(13/16)*1rem;
+            margin-left: calc(63/16)*1vw;
+
             }
         }
         button{

@@ -9,7 +9,7 @@
             height: 285px;
             }
             @include m.mq(pc) {
-                height: 530px;
+                height:calc(530/16)*1vw; 
             }
     }
     p{
@@ -19,12 +19,11 @@
         font-weight: bold;
         position: absolute;
         top: 50%;
-        left: 25px;
+        left:calc(25/16)*1vw;;
+        transform: translateY(-50%);
         @include m.mq(tab) {
-            left: 86px;
+            left: calc(86/16)*1vw;
             }
-            @include m.mq(pc) {
-            left: 86px;
-            }
+            
     }
 }

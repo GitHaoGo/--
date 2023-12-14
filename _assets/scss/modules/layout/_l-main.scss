@@ -2,7 +2,6 @@
 .l-main{
     display: flex;
     width: 100%;
-    height: 100%;
     &__left{
         width: 100%;
         @include m.mq(tab) {
@@ -14,7 +13,7 @@
 }
     &__right{
         width: 0;
-        height: auto;
+        // height: auto;
         @include m.mq(tab) {
             width: 0;
             }
