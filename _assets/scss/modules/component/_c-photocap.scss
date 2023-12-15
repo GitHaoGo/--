@@ -42,7 +42,6 @@
                 @include m.mq(tab) {
                 width: 50%;
                 height: 189px;
-
                 }
                 @include m.mq(pc) {
                 width: 50%;
@@ -86,7 +85,6 @@
         img{
             display: block;
             width: 71%;
-            height: 358px;
             margin: 0 auto;
         }
         @include m.mq(tab) {

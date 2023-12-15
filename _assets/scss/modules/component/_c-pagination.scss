@@ -5,11 +5,14 @@
     text-align: center;
     text-decoration: none;
     border: 1px solid;
-    // min-width: 1em;
     @include m.mq(tab) {
+      margin: .5vw;
+      padding: 1vw;
+      
     }
     @include m.mq(pc) {
-    
+      margin: .5vw;
+      padding: 1vw;
     }
   
   }
@@ -17,18 +20,26 @@
     display: block;
     text-align: center;
     text-decoration: none;
-
     @include m.mq(tab) {
+      margin: .5vw;
+      padding: 1vw;
     }
     @include m.mq(pc) {
-
+      margin: .5vw;
+      padding: 1vw;
     }
   }
 
   .pagination {
     display: flex;
     justify-content: center;
-    margin: 64px auto;
+    margin: 20px;
+    @include m.mq(tab) {
+      margin:  40px 0;
+    }
+    @include m.mq(pc) {
+    margin:  100px 0;
+    }
     a{
       text-decoration: none;
       color: #000;
@@ -50,11 +61,14 @@
       @extend .pagination__btn;
     }
     &__btn {
+      
       &--prev {
+        margin: 0 0 0 10px;
         @extend .pagination__btn;
       }
       &--next {
         display: block;
+        margin: 0 0 0 auto;
         @extend .pagination__btn;
       }
       &--first {
@@ -63,6 +77,7 @@
       }
       &--last {
         display: block;
+        margin: 0 0 0 10px;
         @extend .pagination__btn;
       }
     }
