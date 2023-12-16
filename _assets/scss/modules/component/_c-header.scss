@@ -36,6 +36,7 @@
         border-radius: 10px;
         position: relative;
         padding: .5rem .5rem .5rem 2rem;
+        cursor: pointer;
         @include m.mq(tab) {
             width: 47vw;
             }
@@ -64,6 +65,7 @@
         border:1px solid #707070;
         border-radius: 10px;
         background-color: #F2EDE9;
+        cursor: pointer;
         @include m.mq(tab) {
             width: 16.28vw;
             }

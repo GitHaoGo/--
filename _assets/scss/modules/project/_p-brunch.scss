@@ -20,6 +20,8 @@
     background-repeat: no-repeat;
     position: relative;
     margin-bottom: 1.25rem;
+    display: flex;
+    align-items: flex-end;
     
     @include m.mq(tab) {
         max-width: 50%;
@@ -77,6 +79,9 @@
         opacity: 0.8;
         color: #3C2A10;
         height: auto;
+        // margin: 0 0 auto 0;
+        
+        
     }
 
 
@@ -101,6 +106,7 @@
 
 
     .out-box{
+        
         padding-top: calc(298/16)*1rem;
         @include m.mq(tab) {
         margin-top: calc(371/16)*1rem;
@@ -123,6 +129,7 @@
     }
     dd{
         padding: 0 1rem 1rem;
+        line-height: 1.4;
         @include m.mq(tab) {
 
         }
@@ -137,6 +144,8 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    align-items: flex-end;
     @include m.mq(tab) {
         max-width: 50%;
         }
@@ -186,18 +195,12 @@
     }
     #top{
         margin: 1rem 1rem 0;
-        @include m.mq(tab) {
-
-            }
         @include m.mq(pc) {
             margin: 1.25rem 1.25rem 0;
         }
     }
     #btm{
         margin: 1rem;
-        @include m.mq(tab) {
-            // padding-bottom: 10px;
-            }
         @include m.mq(pc) {
             margin: 1.25rem;
         }
@@ -227,6 +230,7 @@
     }
     dd{
         padding: 0 1rem 1rem;
+        line-height: 1.4;
         @include m.mq(tab) {
 
         }

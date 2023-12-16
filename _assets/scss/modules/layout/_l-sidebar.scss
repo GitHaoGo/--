@@ -1,15 +1,21 @@
 @use "..//foundation/mixin" as m;
 
 .l-sidebar{
-    display: none;
+    // display: none;
     background-color: #F2EDE9;
     height: 100%;
-    @include m.mq(tab) {
-        display: block;
-        }
-        @include m.mq(pc) {
-            display: block;
-        }
+    // @include m.mq(tab) {
+    //     display: none;
+    //     }
+    //     @include m.mq(pc) {
+    //         display: block;
+    //     }
+        // .l-sidebar.open{
+        //         display: flex;
+        //         @include m.mq(tab){
+        //             display: flex;
+        //         }
+        //     }
         h2{
             display: block;
             color: #707070;

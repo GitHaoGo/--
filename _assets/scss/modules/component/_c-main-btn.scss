@@ -1,9 +1,11 @@
 @use "..//foundation/mixin" as m;
 .c-menu-btn{
     position: relative;
+    cursor: pointer;
         @include m.mq(pc) {
             display: none;
         }
+
     p{
     font-family: 'Roboto', sans-serif;
     position: absolute;
@@ -11,6 +13,7 @@
     right: 8px;
     font-size: 20px;
     color: #707070;
+    // z-index: 100;
     @include m.mq(tab) {
         top: 20px;
         right: 25px;
