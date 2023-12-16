@@ -1,20 +1,9 @@
 @use "..//foundation/mixin" as m;
 
 .c-gl{ 
-    display: none;
     padding-top: 178px;
-    @include m.mq(tab) {
-        display: none;
-        }
     @include m.mq(pc) {
-        display: block;
         padding: 0;
-    }
-    &.open{
-        display: block;
-        @include m.mq(tab) {
-            display: block;
-            }
     }
 
     .c-menu{
