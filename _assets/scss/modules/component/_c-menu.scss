@@ -3,7 +3,6 @@
 .c-gl{ 
     display: none;
     padding-top: 178px;
-    height: 100%;
     @include m.mq(tab) {
         display: none;
         }

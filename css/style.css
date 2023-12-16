@@ -57,6 +57,7 @@
 .l-main {
   display: flex;
   width: 100%;
+  position: relative;
 }
 .l-main__left {
   width: 100%;
@@ -73,11 +74,8 @@
 }
 .l-main__right {
   width: 0;
-}
-@media screen and (min-width: 376px) {
-  .l-main__right {
-    width: 0;
-  }
+  left: 100%;
+  transition: 0.5s;
 }
 @media screen and (min-width: 835px) {
   .l-main__right {
@@ -85,11 +83,13 @@
   }
 }
 .l-main__right.open {
-  position: absolute;
+  width: 87%;
+  height: 100%;
+  position: fixed;
   top: 0;
   right: 0;
-  width: 87%;
   z-index: 2000;
+  overflow: auto;
 }
 @media screen and (min-width: 376px) {
   .l-main__right.open {
@@ -98,19 +98,7 @@
 }
 
 .l-sidebar {
-  display: none;
   background-color: #F2EDE9;
-  height: 100%;
-}
-@media screen and (min-width: 376px) {
-  .l-sidebar {
-    display: block;
-  }
-}
-@media screen and (min-width: 835px) {
-  .l-sidebar {
-    display: block;
-  }
 }
 .l-sidebar h2 {
   display: block;
@@ -242,26 +230,14 @@
 }
 
 .c-gl {
-  display: none;
+  display: flex;
+  display: block;
   padding-top: 178px;
-}
-@media screen and (min-width: 376px) {
-  .c-gl {
-    display: none;
-  }
 }
 @media screen and (min-width: 835px) {
   .c-gl {
     display: block;
     padding: 0;
-  }
-}
-.c-gl .c-gl.open {
-  display: flex;
-}
-@media screen and (min-width: 376px) {
-  .c-gl .c-gl.open {
-    display: flex;
   }
 }
 .c-gl .c-menu {
@@ -968,7 +944,7 @@
   width: 50px;
   height: 50px;
 }
-.c-close-btn::before {
+.c-close-btn.open::before {
   position: absolute;
   top: 25px;
   transform: rotate(45deg);
@@ -977,7 +953,7 @@
   width: 45px;
   height: 6px;
 }
-.c-close-btn::after {
+.c-close-btn.open::after {
   position: absolute;
   top: 25px;
   transform: rotate(-45deg);

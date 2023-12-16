@@ -75,6 +75,7 @@
 .l-main__right {
   width: 0;
   transition: 0.5s;
+  background-color: #F2EDE9;
 }
 @media screen and (min-width: 376px) {
   .l-main__right {
@@ -101,10 +102,6 @@
   }
 }
 
-.l-sidebar {
-  background-color: #F2EDE9;
-  height: 100%;
-}
 .l-sidebar h2 {
   display: block;
   color: #707070;
@@ -237,7 +234,6 @@
 .c-gl {
   display: none;
   padding-top: 178px;
-  height: 100%;
 }
 @media screen and (min-width: 376px) {
   .c-gl {

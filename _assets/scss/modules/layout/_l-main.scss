@@ -14,8 +14,8 @@
 }
     &__right{
         width: 0;
-        // height: 100%;
         transition: 0.5s;
+        background-color: #F2EDE9;
         @include m.mq(tab) {
             width: 0;
             }
