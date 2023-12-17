@@ -1379,6 +1379,17 @@ input, select {
 }
 .c-photocap__flex--left p {
   line-height: 1.5;
+  margin-left: 10px;
+}
+@media screen and (min-width: 376px) {
+  .c-photocap__flex--left p {
+    margin-left: 21px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .c-photocap__flex--left p {
+    margin-left: 40px;
+  }
 }
 .c-photocap__flex--right {
   display: flex;
