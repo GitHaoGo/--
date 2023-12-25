@@ -1367,12 +1367,6 @@ input, select {
     height: 189px;
   }
 }
-@media screen and (min-width: 835px) {
-  .c-photocap__flex--left img {
-    width: 50%;
-    height: 358px;
-  }
-}
 .c-photocap__flex--left p {
   line-height: 1.5;
   margin-left: 10px;
@@ -1395,20 +1389,21 @@ input, select {
   width: 40%;
   height: 89px;
   object-fit: cover;
+  margin-left: 10px;
 }
 @media screen and (min-width: 376px) {
   .c-photocap__flex--right img {
     width: 50%;
     height: 189px;
+    margin-left: 21px;
   }
 }
 @media screen and (min-width: 835px) {
   .c-photocap__flex--right img {
-    width: 50%;
-    height: 358px;
+    margin-left: 40px;
   }
 }
-.c-photocap__flex p {
+.c-photocap__flex--right p {
   line-height: 1.5;
 }
 .c-photocap__center {

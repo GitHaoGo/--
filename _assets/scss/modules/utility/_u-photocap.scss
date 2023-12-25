@@ -44,10 +44,7 @@
                 width: 50%;
                 height: 189px;
                 }
-                @include m.mq(pc) {
-                width: 50%;
-                height: 358px;
-                }
+
                 }
                 p{
                 line-height: 1.5;
@@ -70,19 +67,19 @@
                 width: 40%;
                 height: 89px;
                 object-fit: cover;
+                margin-left: 10px;
                 @include m.mq(tab) {
                 width: 50%;
                 height: 189px;
-
+                margin-left: 21px;
                 }
-                @include m.mq(pc) {
-                width: 50%;
-                height: 358px;
+                    @include m.mq(pc) {
+                    margin-left: 40px;
+                    }
                 }
+                p{
+                    line-height: 1.5;
                 }
-        }
-        p{
-            line-height: 1.5;
         }
     }
 
