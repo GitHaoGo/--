@@ -3,13 +3,10 @@
     margin: 1.25rem;
     @include m.mq(tab) {
     display: flex;
-    // margin: 2.5rem;
     margin: calc(40/16)*1vw;
-    
     }
     @include m.mq(pc) {
         display: flex;
-        // margin: 3.25rem ;
         margin: calc(60/16)*1vw;
     }
 }
@@ -79,34 +76,24 @@
         opacity: 0.8;
         color: #3C2A10;
         height: auto;
-        // margin: 0 0 auto 0;
-        
-        
     }
 
 
     #top{
         margin: 1rem 1rem 0;
-        @include m.mq(tab) {
-
-            }
         @include m.mq(pc) {
             margin: 1.25rem 1.25rem 0;
         }
     }
     #btm{
         margin: 1rem;
-        @include m.mq(tab) {
-            // padding-bottom: 10px;
-            }
         @include m.mq(pc) {
             margin: 1.25rem;
         }
     }
 
 
-    .out-box{
-        
+    .box{
         padding-top: calc(298/16)*1rem;
         @include m.mq(tab) {
         margin-top: calc(371/16)*1rem;
@@ -130,9 +117,6 @@
     dd{
         padding: 0 1rem 1rem;
         line-height: 1.4;
-        @include m.mq(tab) {
-
-        }
         @include m.mq(pc) {
             padding: 0 1.25rem 0.875rem;
         }
@@ -207,7 +191,7 @@
     }
 
 
-    .out-box{
+    .box{
         padding-top: calc(298/16)*1rem;
         @include m.mq(tab) {
         margin-top: calc(371/16)*1rem;
@@ -231,9 +215,6 @@
     dd{
         padding: 0 1rem 1rem;
         line-height: 1.4;
-        @include m.mq(tab) {
-
-        }
         @include m.mq(pc) {
             padding: 0 1.25rem 0.875rem;
         }

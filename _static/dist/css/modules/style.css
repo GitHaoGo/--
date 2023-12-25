@@ -638,16 +638,16 @@ input, select {
     margin: 1.25rem;
   }
 }
-.out .out-box {
+.out .box {
   padding-top: 18.625rem;
 }
 @media screen and (min-width: 376px) {
-  .out .out-box {
+  .out .box {
     margin-top: 23.1875rem;
   }
 }
 @media screen and (min-width: 835px) {
-  .out .out-box {
+  .out .box {
     margin-top: 37.5rem;
   }
 }
@@ -756,16 +756,16 @@ input, select {
     margin: 1.25rem;
   }
 }
-.in .out-box {
+.in .box {
   padding-top: 18.625rem;
 }
 @media screen and (min-width: 376px) {
-  .in .out-box {
+  .in .box {
     margin-top: 23.1875rem;
   }
 }
 @media screen and (min-width: 835px) {
-  .in .out-box {
+  .in .box {
     margin-top: 37.5rem;
   }
 }
@@ -963,17 +963,18 @@ input, select {
     padding-left: 19px;
   }
 }
-.c-cardwrap {
+
+.c-wrap {
   margin: 0 19px;
 }
 @media screen and (min-width: 376px) {
-  .c-cardwrap {
+  .c-wrap {
     margin: 0px 43px;
     margin: 0 2.688rem;
   }
 }
 @media screen and (min-width: 835px) {
-  .c-cardwrap {
+  .c-wrap {
     margin: 0 100px;
     margin: 0 6.25rem;
   }
@@ -985,11 +986,6 @@ input, select {
   background-color: #3C2A10;
 }
 @media screen and (min-width: 376px) {
-  .c-card {
-    display: flex;
-  }
-}
-@media screen and (min-width: 835px) {
   .c-card {
     display: flex;
   }

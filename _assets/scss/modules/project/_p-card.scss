@@ -1,5 +1,5 @@
 @use "..//foundation/mixin" as m;
-.c-cardwrap{
+.c-wrap{
     margin: 0 19px;
     @include m.mq(tab) {
     margin: 0px 43px;
@@ -8,7 +8,6 @@
     @include m.mq(pc) {
         margin: 0 100px;
         margin: 0 6.25rem;
-    
     }
     
 }
@@ -16,17 +15,7 @@
     width: 100%;
     margin-bottom: 20.5px;
     background-color: #3C2A10;
-    // &::after{
-    //     // display: block;
-    //     content: "";
-    //     width: 100%;
-    //     padding-top: 75%;
-    // }
     @include m.mq(tab) {
-        display: flex;
-
-        }
-        @include m.mq(pc) {
         display: flex;
         }
     .card-img{
@@ -42,7 +31,6 @@
 
     figcaption{
         color: #FFFFFF;
-        // background-color: #3C2A10;
         @include m.mq(tab) {
         width: 100%;
         }
@@ -99,17 +87,14 @@
             height: 42px;
             border-radius: 50px;
             margin: 0 auto;
-            // margin-bottom: 50px;
             font-weight: bold;
             @include m.mq(tab) {
-                // width: 163px;
                 width: 50%;
                 height: 42px;
                 margin: 0 auto;
                 margin-bottom: calc(50/16)*1vw;
             }
             @include m.mq(pc) {
-                // width: 292px;
                 width: 50%;
                 height: 79px;
             }
