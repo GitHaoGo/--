@@ -30,7 +30,7 @@
             left: 86px;
         }
     }
-    h1::before{
+    h1::after{
         content: "チーズバーガー";
         font-size: 16px;
         display: block;

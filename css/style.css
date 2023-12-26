@@ -48,24 +48,10 @@
     margin: 27px;
   }
 }
-.l-footer span::after {
+.l-footer .bar::after {
   content: "|";
   color: #FFFFFF;
-  display: block;
-  margin-top: 16px;
-  margin-bottom: 70px;
-}
-@media screen and (min-width: 376px) {
-  .l-footer span::after {
-    margin-top: 30px;
-    margin-bottom: 44px;
-  }
-}
-@media screen and (min-width: 835px) {
-  .l-footer span::after {
-    margin-top: 41px;
-    margin-bottom: 31px;
-  }
+  padding: 0 0 0 20px;
 }
 
 .l-header {
@@ -982,14 +968,14 @@ input, select {
     left: 86px;
   }
 }
-.p-archive-mv h1::before {
+.p-archive-mv h1::after {
   content: "チーズバーガー";
   font-size: 16px;
   display: block;
   padding-top: 10px;
 }
 @media screen and (min-width: 376px) {
-  .p-archive-mv h1::before {
+  .p-archive-mv h1::after {
     padding-left: 19px;
   }
 }
