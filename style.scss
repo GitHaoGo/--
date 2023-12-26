@@ -1,8 +1,7 @@
 @charset "uft-8";
 
-@use "layout";
-@use "foundation";
-// @use "object";
-@use "component";
-@use "project";
-@use "utility";
+@use "./layout";
+@use "./foundation";
+@use "./object/component";
+@use "./object/project";
+@use "./object/utility";

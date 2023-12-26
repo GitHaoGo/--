@@ -1,4 +1,4 @@
-@use "..//foundation/mixin" as m;
+@use "../../foundation/mixin" as m;
 .c-caption2{
     margin: 0 20px;
     @include m.mq(tab) {

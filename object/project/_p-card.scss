@@ -1,4 +1,4 @@
-@use "..//foundation/mixin" as m;
+@use "../../foundation/mixin" as m;
 .c-wrap{
     margin: 0 19px;
     @include m.mq(tab) {
