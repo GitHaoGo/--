@@ -48,6 +48,25 @@
     margin: 27px;
   }
 }
+.l-footer span::after {
+  content: "|";
+  color: #FFFFFF;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 376px) {
+  .l-footer span::after {
+    margin-top: 30px;
+    margin-bottom: 44px;
+  }
+}
+@media screen and (min-width: 835px) {
+  .l-footer span::after {
+    margin-top: 41px;
+    margin-bottom: 31px;
+  }
+}
 
 .l-header {
   width: 100%;
@@ -411,7 +430,6 @@ input, select {
   border-radius: 10px;
   position: relative;
   padding: 0.5rem 0.5rem 0.5rem 2rem;
-  cursor: pointer;
 }
 @media screen and (min-width: 376px) {
   .c-header .search {
@@ -937,6 +955,15 @@ input, select {
   width: 100%;
   height: 285px;
 }
+.p-archive-mv .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
 .p-archive-mv h1 {
   display: block;
   position: absolute;
@@ -954,14 +981,14 @@ input, select {
     left: 86px;
   }
 }
-.p-archive-mv h1::after {
+.p-archive-mv h1::before {
   content: "チーズバーガー";
   font-size: 16px;
   display: block;
   padding-top: 10px;
 }
 @media screen and (min-width: 376px) {
-  .p-archive-mv h1::after {
+  .p-archive-mv h1::before {
     padding-left: 19px;
   }
 }
